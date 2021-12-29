@@ -1,7 +1,9 @@
 // Component import
 import React from 'react';
 import Welcome from '../components/Welcome';
-import Skill from '../components/Skill';
+import Skills from '../components/Skills';
+import Experience from '../components/Experience';
+import Projects from '../components/Projects';
 
 // Style and constants import
 
@@ -15,7 +17,9 @@ const Home: React.FC<Props> = (props) => {
   return (
     <>
       <Welcome />
-      <Skill />
+      <Skills />
+      <Experience />
+      <Projects />
     </>
   );
 }

@@ -11,7 +11,7 @@ const ContactTags: React.FC<Props> = (props) => {
     const { icon, title, responsiveIcon } = props;
 
     return (
-        <div className="flex items-center justify-between bg-primary rounded-lg px-4 py-1 md:px-6 md:py-2 md:mr-12">
+        <div className="flex items-center justify-between bg-primary rounded-lg px-4 py-1 md:py-2 md:mr-12">
             <div className="flex md:hidden">
                 {icon}
             </div>
