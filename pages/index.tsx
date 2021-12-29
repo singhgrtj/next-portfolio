@@ -1,5 +1,7 @@
 // Component import
 import React from 'react';
+import Welcome from '../components/Welcome';
+import Skill from '../components/Skill';
 
 // Style and constants import
 
@@ -11,9 +13,10 @@ const Home: React.FC<Props> = (props) => {
   const {} = props;
 
   return (
-    <div className="h-screen w-full flex justify-center items-center font-body">
-      <h1 className="text-3xl font-semibold">Next Portfolio</h1>
-    </div>
+    <>
+      <Welcome />
+      <Skill />
+    </>
   );
 }
 

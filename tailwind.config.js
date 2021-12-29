@@ -5,8 +5,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Roboto, sans-serif']
+        body: ['Inter, sans-serif']
       }
+    },
+    colors: {
+      primary: "#FFC107",
+      secondary: "#F5F5F6",
+      gray: "#525252",
     },
   },
   variants: {
