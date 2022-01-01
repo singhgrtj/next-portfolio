@@ -1,5 +1,6 @@
 import React from 'react';
 import Circle from './Circle';
+import ProjectCard from './ProjectCard';
 import Title from './Title';
 
 interface Props {
@@ -17,8 +18,13 @@ const Projects: React.FC<Props> = () => {
                 <Circle />
             </div>
 
-            {/* Project Card */}
+            {/* Projects Card */}
             <div className="flex flex-col items-center mt-2 md:flex-row md:justify-between md:mt-8">
+                <ProjectCard />
+                <div className="w-2/12"/>
+                <ProjectCard />
+                <div className="w-2/12"/>
+                <ProjectCard />
             </div>
 
         </section>
