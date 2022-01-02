@@ -7,7 +7,7 @@ interface Props {
 
 }
 
-const Projects: React.FC<Props> = () => {
+const Projects: React.FC<Props> = (data) => {
     return (
         <section className="px-4 py-6 w-full md:px-28 md:min-h-screen bg-secondary md:flex md:flex-col md:justify-center">
             {/* Title */}
@@ -20,11 +20,26 @@ const Projects: React.FC<Props> = () => {
 
             {/* Projects Card */}
             <div className="flex flex-col items-center mt-2 md:flex-row md:justify-between md:mt-8">
-                <ProjectCard />
+                <ProjectCard 
+                    name="Nomade4SDGs"
+                    descripcion="App for digital nomads, using React Native Expo and interacting with 3rd party API such as Musement."
+                    button="View online"
+                    tags="#reactnative #restapi #musement"
+                    image="/welcome.jpg"/>
                 <div className="w-2/12"/>
-                <ProjectCard />
+                <ProjectCard 
+                    name="Arkhi UI/UX"
+                    descripcion="App for digital nomads, using React Native Expo and interacting with 3rd party API such as Musement."
+                    button="View on Figma"
+                    tags="#figma #ui #ux"
+                    image="/arkhi.png"/>
                 <div className="w-2/12"/>
-                <ProjectCard />
+                <ProjectCard 
+                    name="Binance Lite Clone"
+                    descripcion="Binance Lite mobile app using React Native Expo."
+                    button="View in Github"
+                    tags="#reactnative #crypto #tailwindcss"
+                    image="/binance-lite.png"/>
             </div>
 
         </section>

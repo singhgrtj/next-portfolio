@@ -1,29 +1,42 @@
 import React from 'react';
 
 interface Props {
+    place: string;
+    title: string;
+    date: string;
+    description: string;
 }
 
 const ExperienceInfo: React.FC<Props> = (props) => {
+
+    const { place, title, date, description } = props;
+
     return (
         <div className="mt-2">
             <div className="flex">
                 <div className="text-sm font-semibold w-2/5 md:text-lg">
-                    SEPTEMBER 2017 - JUNE 2019
+                    {place}
                 </div>
                 <div className="text-sm font-semibold w-3/5 ml-4 md:text-lg md:ml-0">
-                    ASSOCIATE OF ELECTRICAL MECHANICS
+                    {title}
                 </div>
             </div>
 
-            <div className="text-gray text-left font-regular mt-2 text-sm md:text-base md:w-full md:justify-end md:items-end md:hidden">
-                Hello, I’m Singh, I’m a graduated frontend developer and self-taught UI/UX designer. 
-                I’m a React lover and CSS developer  
+            <div className="flex md:hidden mt-2">
+                <div className="text-sm font-regular w-2/5 text-gray md:text-lg">
+                    {date}
+                </div>
+                <div className="text-sm font-regular w-3/5 ml-4 text-gray md:text-lg md:ml-0">
+                    {description}
+                </div> 
             </div>
 
-            <div className="hidden md:flex md:justify-end md:w-full">
-                <div className="text-gray text-left font-regular mt-2 text-sm md:text-base md:w-3/5 md:flex md:justify-end md:items-end">
-                    Hello, I’m Singh, I’m a graduated frontend developer and self-taught UI/UX designer. 
-                    I’m a React lover and CSS developer  
+            <div className="hidden md:flex md:w-full">
+                <div className="text-sm font-regular w-2/5 text-gray md:text-base">
+                    {date}
+                </div>
+                <div className="text-sm font-regular w-3/5 ml-4 text-gray md:text-base md:ml-0">
+                    {description}
                 </div>
             </div>
         </div>

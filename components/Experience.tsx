@@ -18,9 +18,17 @@ const Experience: React.FC<Props> = () => {
                     <Title title="EDUCATION" />
                     <Line />
                     <div className="mt-2">
-                        <ExperienceInfo />
+                        <ExperienceInfo 
+                            date="SEPT 2019 - JUN 2021"
+                            title="ASSOCIATE OF COMPUTER SCIENCE"
+                            description="This is where I started my journey as a Programmer, learned basics of JAVA, Android Studio and HTML/CSS."
+                            place="ACADEMIA EDIB"/>
                         <div className="mt-10 md:mt-4">
-                            <ExperienceInfo />
+                            <ExperienceInfo 
+                                date="SEPT 2017 - JUN 2019"
+                                title="ASSOCIATE OF ELECTRICAL MECHANIC"
+                                description="From my childhood I had a big interest in this field, but after this degree I realized that it wasn’t made for me."
+                                place="IES JUNIPER SERRA"/>
                         </div>
                     </div>
                 </div>
@@ -30,12 +38,24 @@ const Experience: React.FC<Props> = () => {
                     <Title title="WORK EXPERIENCE" />
                     <Line />
                     <div className="mt-2">
-                        <ExperienceInfo />
+                            <ExperienceInfo 
+                                date="DEC 2021 - NOW"
+                                title="FRONTEND DEVELOPER"
+                                description="Design UI/UX and develop the web app using NEXT JS + Tailwind CSS + Firebase."
+                                place="Arkhi"/>
                         <div className="mt-10 md:mt-4">
-                            <ExperienceInfo />
+                            <ExperienceInfo 
+                                date="JUN 2021 - DEC 2021"
+                                title="FRONTEND DEVELOPER"
+                                description="Develop the frontend of the mobile application and website using React Native and Next JS."
+                                place="Nomade4SDGs"/>
                         </div>
                         <div className="mt-10 md:mt-4">
-                            <ExperienceInfo />
+                            <ExperienceInfo 
+                                date="MAR 2021 - JUN 2021"
+                                title="FULLSTACK DEVELOPER"
+                                description="Started my journey with React, developing  components and Node JS REST API."
+                                place="PayParc"/>
                         </div>
                     </div>
                 </div>
