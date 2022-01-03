@@ -24,8 +24,7 @@ const Contact: React.FC<Props> = () => {
                 <div className="flex flex-col items-center md:w-1/2 md:items-start">
                     <Title title="CONTACT" />
                     <div className="text-gray text-center font-regular text-sm mt-6 md:text-xl md:w-4/5 md:text-left">
-                        Hello, I’m Singh, I’m a graduated frontend developer and self-taught UI/UX designer. 
-                        I’m a React lover and CSS developer  
+                        Hey! Please feel free to contact me at any time! I will try to reply as soon as possible!
                     </div>
                     <div className="text-left text-3xl self-start font-bold mt-4 md:text-5xl md:mt-6">
                         +1 765 978 9678

@@ -33,7 +33,7 @@ export default function handler(req, res) {
         if (error) {
             console.log(error);
         } else {
-            res.status(200).json({ success: 'Email sent!' })
+            res.status(200).send({ success: 'Email sent!' })
         }
     });
 }

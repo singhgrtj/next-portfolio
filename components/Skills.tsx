@@ -23,9 +23,8 @@ const Skills: React.FC<Props> = () => {
 
             {/* Text */}
             <div className="flex justify-center items-center">
-                <div className="text-gray text-center font-regular mt-8 md:text-xl md:w-2/4">
-                    Hello, I’m Singh, I’m a graduated frontend developer and self-taught UI/UX designer. 
-                    I’m a React lover and CSS developer  
+                <div className="text-gray text-center font-regular mt-8 md:text-xl md:w-3/4">
+                I design and implement user-oriented functions for websites and applications that use React. js or any React based Framework such as React Native or Next JS. I love TailwindCSS just because how easy and fast it is to style with it.
                 </div>
             </div>
 
