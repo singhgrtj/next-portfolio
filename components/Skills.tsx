@@ -12,7 +12,7 @@ interface Props {
 
 const Skills: React.FC<Props> = () => {
     return (
-        <section className="px-4 py-6 w-full md:px-28 md:min-h-screen bg-secondary md:flex md:flex-col md:justify-center">
+        <section className="px-4 py-6 w-full md:px-28 md:min-h-screen bg-secondary md:flex md:flex-col md:justify-center" id="skills">
             {/* Title */}
             <div className="flex justify-center items-center">
                 <div className="mr-2">

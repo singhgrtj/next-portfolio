@@ -11,7 +11,7 @@ interface Props {
 
 const Welcome: React.FC<Props> = () => {
     return (
-        <section className="px-4 py-6 w-full md:px-28 md:min-h-screen">
+        <section className="px-4 py-6 w-full md:px-28 md:min-h-screen" id="welcome">
             {/* CV Button */}
             <div className="flex justify-end md:hidden">
                 <button className="flex items-center justify-center w-40 h-12 border-2 border-primary bg-secondary rounded-lg">
@@ -54,7 +54,7 @@ const Welcome: React.FC<Props> = () => {
                         <text className="font-bold">{" UI/UX designer."}</text>    
                     </div>
                     <div className="flex flex-col items-center mt-6 md:justify-start md:flex-row">
-                        <Button title="View My Work"/>
+                        <Button title="View My Work" url="#projects" next_link={true}/>
                         <div className="flex mt-6 md:hidden">
                             <div className="mr-2">
                                 <IoLogoLinkedin size={40} />

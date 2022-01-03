@@ -10,7 +10,7 @@ interface Props {
 
 const Experience: React.FC<Props> = () => {
     return (
-        <section className="px-4 py-6 w-full md:px-28 md:min-h-screen md:w-full bg-white md:flex md:items-center">
+        <section className="px-4 py-6 w-full md:px-28 md:min-h-screen md:w-full bg-white md:flex md:items-center" id="experience">
             {/* Education and Experience */}
             <div className="md:w-4/6 mt-4">
                 {/* Education */}

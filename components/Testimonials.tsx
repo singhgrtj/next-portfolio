@@ -20,9 +20,19 @@ const Testimonials: React.FC<Props> = () => {
 
             {/* Testimonials cards */}
             <div className="flex flex-col md:flex-row md:mt-8">
-                <TestimonialCard />
+                <TestimonialCard 
+                    name="Adam Weiss"
+                    title="Founder of Revolver Lifestyle"
+                    review="Singh shows commitment by helping in whatever way he can to make the project a reality and transmits passion for his work in every detail."
+                    url="https://www.linkedin.com/in/adamweissnomade/"
+                    image="/adam.jpeg"/>
                 <div className="hidden md:flex md:w-1/5"/>
-                <TestimonialCard />
+                <TestimonialCard 
+                    name="Joan Lapaix"
+                    title="Founder of Arkhi"
+                    review="Singh shows commitment by helping in whatever way he can to make the project a reality and transmits passion for his work in every detail."
+                    url="https://www.linkedin.com/in/joan-lapaix/"
+                    image="/joan.jpeg"/>
             </div>
         </section>
     )

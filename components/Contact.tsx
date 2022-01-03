@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from './Footer';
 import Title from './Title';
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
@@ -12,9 +12,14 @@ interface Props {
 }
 
 const Contact: React.FC<Props> = () => {
+
+    const [email, setEmail] = useState<string>("");
+    const [name, setName] = useState<string>("");
+    const [message, setMessage] = useState<string>("");
+
     return (
         <>
-            <section className="px-4 py-6 w-full md:px-28 md:min-h-screen bg-secondary md:flex md:flex-row md:pt-36">
+            <section className="px-4 py-6 w-full md:px-28 md:min-h-screen bg-secondary md:flex md:flex-row md:pt-36" id="contact">
                 {/* Contact Info */}
                 <div className="flex flex-col items-center md:w-1/2 md:items-start">
                     <Title title="CONTACT" />
@@ -46,14 +51,14 @@ const Contact: React.FC<Props> = () => {
                 <div className="flex flex-col items-center mt-8 w-full md:mt-0 md:w-1/2">
                     <Title title="LET’S GRAB A COFFE AND JUMP ON CONVERSATION WITH ME." />
                     <div className="flex flex-col mt-4 w-full">
-                        <InputText />
-                        <InputText />
+                        <InputText placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)}/>
+                        <InputText placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
                     </div>
                     <div className="md:mt-2 w-full">
-                        <TextArea />
+                        <TextArea onChange={(e) => setMessage(e.target.value)} value={message}/>
                     </div>
                     <div className="mt-2 self-start">
-                        <Button title="Contact Me" />
+                        <Button title="Contact Me" url="www.google.com" next_link={false}/>
                     </div>
                 </div>
             </section>
