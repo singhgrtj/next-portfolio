@@ -44,7 +44,7 @@ const Contact: React.FC<Props> = () => {
             return;
         }
 
-        axios.post('http://localhost:3000/api/sendEmail', {
+        axios.post('https://singhgrtj.com/api/sendEmail', {
             name: name,
             email: email,
             message: message
