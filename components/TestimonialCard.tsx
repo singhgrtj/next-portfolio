@@ -1,5 +1,6 @@
 import React from 'react';
 import Star from './Star';
+import { motion } from 'framer-motion';
 
 interface Props {
     review: string;
@@ -14,7 +15,8 @@ const TestimonialCard: React.FC<Props> = (props) => {
     const { review, name, title, url, image } = props;
 
     return (
-        <a className="flex flex-col w-full px-6 py-8 shadow-xl rounded-lg bg-white mt-4 hover:cursor-pointer hover:scale-105 hover:transition hover:duration-75" href={url} target={"_blank"}>
+        <a 
+            className="flex flex-col w-full px-6 py-8 shadow-xl rounded-lg bg-white mt-4 hover:cursor-pointer hover:scale-105 hover:transition hover:duration-75" href={url} target={"_blank"}>
             {/* Avatar */}            
             <div className="flex flex-col items-center md:flex-row md:justify-center">
                 <div className="bg-cover bg-no-repeat rounded-full h-24 w-24 md:h-20 md:w-20" style={{ backgroundImage: `url('${image}')` }}></div>

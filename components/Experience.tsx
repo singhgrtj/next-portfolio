@@ -3,6 +3,8 @@ import Title from './Title';
 import Line from './Line';
 import ExperienceInfo from './ExperienceInfo';
 import Square from './Square';
+import { motion } from 'framer-motion';
+import { showIn } from '../variants';
 
 interface Props {
 
@@ -12,9 +14,15 @@ const Experience: React.FC<Props> = () => {
     return (
         <section className="px-4 py-6 w-full md:px-28 md:min-h-screen md:w-full bg-white md:flex md:items-center" id="experience">
             {/* Education and Experience */}
-            <div className="md:w-4/6 mt-4">
+            <motion.div 
+                className="md:w-4/6 mt-4"
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: false }}>
                 {/* Education */}
-                <div className="flex flex-col justify-center">
+                <motion.div 
+                    className="flex flex-col justify-center"
+                    variants={showIn}>
                     <Title title="EDUCATION" />
                     <Line />
                     <div className="mt-2">
@@ -31,10 +39,12 @@ const Experience: React.FC<Props> = () => {
                                 place="IES JUNIPER SERRA"/>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Experience */}
-                <div className="flex flex-col justify-center mt-10">
+                <motion.div 
+                    className="flex flex-col justify-center mt-10"
+                    variants={showIn}>
                     <Title title="WORK EXPERIENCE" />
                     <Line />
                     <div className="mt-2">
@@ -58,8 +68,8 @@ const Experience: React.FC<Props> = () => {
                                 place="PayParc"/>
                         </div>
                     </div>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
 
             {/* Box Design */}
             <div className="hidden md:flex md:flex-col md:w-2/6">
