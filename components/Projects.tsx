@@ -25,6 +25,18 @@ const Projects: React.FC<Props> = (data) => {
                 <Circle />
             </motion.div>
 
+            {/* Text */}
+            <motion.div 
+                className="flex justify-center items-center"
+                variants={showIn}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: false }}>
+                <div className="text-gray text-center font-regular mt-8 md:text-xl md:w-3/4">
+                    Check this portfolio website code in <a href="https://github.com/singhgrtj/next-portfolio" className='underline font-bold'>github</a> and the design in <a href="https://www.figma.com/file/Q9fy0NKXRHbuaLrnP4j640/Next-JS-Portfolio?node-id=0%3A1" className='underline font-bold'>figma</a>
+                </div>
+            </motion.div>
+
             {/* Projects Card */}
             <motion.div 
                 className="flex flex-col items-center mt-2 md:flex-row md:justify-between md:mt-8"
@@ -37,7 +49,7 @@ const Projects: React.FC<Props> = (data) => {
                     descripcion="Website + App for digital nomads, using React Native Expo and interacting with 3rd party API such as Musement."
                     button="View online"
                     tags="#reactnative #restapi #musement"
-                    image="/welcome.jpg"
+                    image="/nomade-screens.png"
                     url="https://nomade4sdgs.org/"/>
                 <div className="w-2/12"/>
                 <ProjectCard 
