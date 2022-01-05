@@ -1,5 +1,6 @@
 // Component import
 import React from 'react';
+import Head from 'next/head';
 import Welcome from '../components/Welcome';
 import Skills from '../components/Skills';
 import Experience from '../components/Experience';
@@ -18,6 +19,11 @@ const Home: React.FC<Props> = (props) => {
 
   return (
     <>
+      <Head>
+        <title>Singh - Portfolio</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href="/favicon.png" />
+      </Head>
       <Welcome />
       <Skills />
       <Experience />
