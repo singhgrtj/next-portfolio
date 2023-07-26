@@ -22,6 +22,10 @@ const Home: React.FC<Props> = (props) => {
       <Head>
         <title>Singh - Portfolio</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="google-site-verification"
+          content="NBJKR26eOuO8rAl7TxQFACtFQNXUlEiJgFYcrNzbAco"
+        />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Welcome />
